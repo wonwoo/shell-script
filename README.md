@@ -32,22 +32,22 @@ echo "argument 2 : $2"      #argument 2 : world
 ```
   
 ### if 
-* 문자열 비교
-  - 문자는 `=` 로 비교를 한다
+  * 문자열 비교
+    - 문자는 `=` 로 비교를 한다
 ```sh
 if [[  $str = "str" ]]; then
   echo "str equels str"
 fi
 #str equels str
 ```
-  - 문자가 같지 않을때
+    - 문자가 같지 않을때
 ```sh
 if [[ $str != $str1 ]]; then
   echo "str diff str1"
 fi
 #str diff str1
 ```
-  - 빈 문자가 아닌때
+    - 빈 문자가 아닌때
 ```sh
 if [[ -n $str ]]; then
   echo "is not null"
