@@ -1,7 +1,7 @@
 # shell-script
 
 ### 변수
-* 변수 선언
+#### 변수 선언
   - 타입 추론을 한다.
 ```sh
 val=10
@@ -32,7 +32,7 @@ echo "argument 2 : $2"      #argument 2 : world
 ```
   
 ### if 
-* 문자열 비교
+#### 문자열 비교
   - 문자는 `=` 로 비교를 한다
 ```sh
 if [[  $str = "str" ]]; then
@@ -62,8 +62,8 @@ fi
 #is null
 ```
 
-* 숫자 비교
-  -같은 숫자인지 비교
+#### 숫자 비교
+  - 같은 숫자인지 비교
 ```sh
 if [[ i -eq 1 ]]; then
   echo "i=1"
@@ -117,7 +117,7 @@ if [[ i -le 1 ]]; then
 fi
 #i <= 1
 ```
-* 파일 
+#### 파일 
   - `-e` 해당 파일이 존재 하면 참(폴더도 가능?)
   - `-f` 해당 파일이 존재 하면 참
   - `-d` 해당 디렉토리 존재 하면참
@@ -138,7 +138,7 @@ if [[ -d example02 ]]; then
 fi
 #found example02 dir
 ```
-* if elif else
+#### if elif else
 ```sh
 if [[ -f example02 ]]; then
   echo "example01 dir?"
@@ -149,7 +149,7 @@ else
 fi
 #example02 dir
 ```
-* and or
+#### and or
 ```sh
 if [[ -d example02 && -f example02.sh ]]; then
   echo "example02 dir and example02.sh file"
