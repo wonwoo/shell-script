@@ -289,30 +289,38 @@ echo $retArr
 #1 2 3 4 5
 ```
 
+### case
 
+```sh
+case $pName in
+  start)
+    ./example01.sh
+    echo "./example01"
+    ;;
+  stop)
+    ./example02.sh
+    echo "./example02"
+    ;;
+esac
+#./example05.sh start
+#10
+#hello world
+#value1 value2 value3
+#this file : ./example01.sh
+#argument size : 0
+#Process ID : 1883
+#arguments : 
+#argument 1 : 
+#argument 2 :
 
-  
+#./example05.sh stop
+#str equels str
+#str diff str1
+#...
+#example02 file or example02.sh file
+#./example02
+#lee-ui-MacBo
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+./example01
+```
 
